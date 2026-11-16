@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1794870704 source:c:\users\leand\documents\programacao\proyecto gagala\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"rlutil.h"
+	"Menu.h"
+
+1794767034 c:\users\leand\documents\programacao\proyecto gagala\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1794775649 source:c:\users\leand\documents\programacao\proyecto gagala\jugador.cpp
+	<iostream>
+	"rlutil.h"
+	"jugador.h"
+
+1794775720 c:\users\leand\documents\programacao\proyecto gagala\jugador.h
+
+1794775831 source:c:\users\leand\documents\programacao\proyecto gagala\estrellas.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"rlutil.h"
+
+1794776085 source:c:\users\leand\documents\programacao\proyecto gagala\estadisticas.cpp
+	<iostream>
+	"rlutil.h"
+	"estadisticas.h"
+
+1794776085 c:\users\leand\documents\programacao\proyecto gagala\estadisticas.h
+
+1794864495 c:\users\leand\documents\programacao\proyecto gagala\enemigos.h
+
+1794866948 source:c:\users\leand\documents\programacao\proyecto gagala\menu z.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"rlutil.h"
+
+1794870734 source:c:\users\leand\documents\programacao\proyecto gagala\menu.cpp
+	<iostream>
+	<cstdlib>
+	"rlutil.h"
+	"Menu.h"
+
+1794870704 c:\users\leand\documents\programacao\proyecto gagala\menu.h
+
