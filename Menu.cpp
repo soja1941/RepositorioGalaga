@@ -23,7 +23,7 @@ void mostrarMenu() {
     rlutil::locate(25, 9);
     cout << "1. Jugar / Aventura";
     rlutil::locate(25, 10);
-    cout << "2. Manual / Creditos";
+    cout << "2. Controles";
     rlutil::locate(25, 11);
     cout << "0. Salir";
 

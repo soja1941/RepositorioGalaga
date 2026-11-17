@@ -25,8 +25,8 @@ void verificarColisiones(int balas_x[], int balas_y[], bool balas_activas[], int
             for (int f = 0; f < filas; f++) {
                 for (int c = 0; c < columnas; c++) {
                     if (enemigos_vivos[f][c]) {
-                        int x_enemigos = x_filas[f] + (c * 4);
-                        int y_enemigos = y_filas[f];
+                        int x_enemigo = x_filas[f] + (c * 4);
+                        int y_enemigo = y_filas[f];
 
                         if (balas_y[i] == y_enemigo && balas_x[i] >= x_enemigo && balas_x[i] <= x_enemigo + 2) {
                             enemigos_vivos[f][c] = false;

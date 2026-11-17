@@ -3,6 +3,8 @@
 #include <ctime>
 #include "rlutil.h"
 #include "Menu.h"
+#include "jugador.h"       // <-- Obligatorio para que main reconozca jugarPartida()
+#include "estadisticas.h"  // <-- Obligatorio para mostrarEstadisticas()
 
 using namespace std;
 
@@ -30,20 +32,21 @@ int main() {
 
         switch (opcion) {
             case 1: {
-                rlutil::cls();
-                cout << "=== MODO JUEGO / AVENTURA ===" << endl;
-                cout << "Aqui iniciara la partida de GAGALAGA." << endl;
-                cout << endl;
-                cout << "Presione una tecla para volver al menu.";
-                rlutil::anykey();
+                int puntajeFinal = jugarPartida(); // Llama a la lógica del juego y recibe el puntaje[cite: 7]
+                mostrarEstadisticas(puntajeFinal);  // Muestra las estadísticas al terminar la partida[cite: 6]
                 break;
             }
             case 2: {
                 rlutil::cls();
-                cout << "=== MANUAL / CREDITOS ===" << endl;
-                cout << "Juego desarrollado para Programacion 1 (UTN FRGP)." << endl;
-                cout << endl;
-                cout << "Presione una tecla para volver al menu.";
+                cout << "========================================" << endl;
+                cout << "          CONTROLES DE GAGALAGA         " << endl;
+                cout << "========================================" << endl;
+                cout << " [A] / [a] -> Moverse a la izquierda    " << endl;
+                cout << " [D] / [d] -> Moverse a la derecha      " << endl;
+                cout << " [ESPACIO] -> Disparar bala             " << endl;
+                cout << " [ESC]     -> Volver al menu principal  " << endl;
+                cout << "----------------------------------------" << endl;
+                cout << "Presione cualquier tecla para volver...";
                 rlutil::anykey();
                 break;
             }
